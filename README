@@ -1,0 +1,28 @@
+This is a Vagrant environment to run the flask mod_wsgi app located in app.wsgi.
+
+To run it:
+
+vagrant up
+curl localhost:8080/ok
+
+* About to connect() to localhost port 8080 (#0)
+*   Trying ::1...
+* Connection refused
+*   Trying 127.0.0.1...
+* connected
+* Connected to localhost (127.0.0.1) port 8080 (#0)
+> GET /ok HTTP/1.1
+> User-Agent: curl/7.24.0 (x86_64-apple-darwin12.0) libcurl/7.24.0 OpenSSL/0.9.8x zlib/1.2.5
+> Host: localhost:8080
+> Accept: */*
+>
+< HTTP/1.1 200 OK
+< Date: Sun, 14 Jul 2013 00:53:59 GMT
+< Server: Apache/2.2.22 (Ubuntu)
+< Test: Value
+< Content-Length: 11
+< Vary: Accept-Encoding
+< Content-Type: text/html; charset=utf-8
+<
+* Connection #0 to host localhost left intact
+Hello World* Closing connection #0

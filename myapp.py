@@ -16,7 +16,6 @@ def ok():
     resp = make_response(r_body,        # Create the Response Object
                          r_status,
                          r_headers)
-    print test
     return resp                         # Return the response object
 
 
